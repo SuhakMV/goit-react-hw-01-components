@@ -1,0 +1,31 @@
+.transaction_box{
+    display: flex;
+    justify-content: center;
+}
+
+.transaction_history{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.transaction_head{
+    background-color: rgba(34, 178, 218, 0.839);
+}
+
+
+.table_item_cell{
+    color:black;
+}
+
+.table_item_cell:nth-child(1){
+    text-transform: uppercase;
+    font-weight: bold
+}
+
+.title{
+    font-size: 25px;
+    /*padding-left: 20px;
+    padding-right: 20px;*/
+}
