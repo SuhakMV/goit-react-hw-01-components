@@ -1,31 +1,61 @@
-.transaction_box{
-    display: flex;
-    justify-content: center;
-}
+.title, .table_item_cell {
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: white;
+    }
 
-.transaction_history{
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
-}
+    .transaction_history {
+        overflow:hidden;
+        border:1px solid #d3d3d3;
+        background:#fefefe;
+        width:40%;
+        margin:5% auto 0;
+        -moz-border-radius:5px;
+        -webkit-border-radius:5px;
+        border-radius:5px;
+    }
+     
+    .title, .table_item_cell {
+        padding:10px 20px 10px; 
+        text-align:center; 
+    }
+     
+    .title {
+        padding-top:22px; 
+        text-shadow: 1px 1px 1px #fff;
+        background:aquamarine;
+    }
+     
+    .table_item_cell {
+        border-top:1px solid #e0e0e0; 
+        border-right:1px solid #e0e0e0;
+    }
+     
+    .table_item.odd-row td {
+        background:#f6f6f6;
+    }
+     
+    .table_item_cell.first, th.first {
+        text-align:left
+    }
+     
+    .table_item_cell.last {
+        border-right:none;
+    }
+     
+    .table_item_cell {
+        background: -moz-linear-gradient(100% 25% 90deg, #fefefe, #f9f9f9);
+    }
+     
+    .title {
+        background: -moz-linear-gradient(100% 20% 90deg, #e8eaeb, #ededed);
+    }
 
-.transaction_head{
-    background-color: rgba(34, 178, 218, 0.839);
-}
+    .table_item_cell:nth-child(1){
+        text-transform: uppercase;
+        font-weight: 500;
+    }
 
-
-.table_item_cell{
-    color:black;
-}
-
-.table_item_cell:nth-child(1){
-    text-transform: uppercase;
-    font-weight: bold
-}
-
-.title{
-    font-size: 25px;
-    /*padding-left: 20px;
-    padding-right: 20px;*/
-}
+    .table_item:nth-child(even) {
+        background: #e8eaeb;
+    }

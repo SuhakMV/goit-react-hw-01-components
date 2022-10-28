@@ -5,7 +5,7 @@ export const Transactions = ({ items }) => {
     return (
     <table className={css.transaction_history}>
     <thead className={css.transaction_head}>
-      <tr>
+      <tr className={css.table_item}>
         <th className={css.title}>Type</th>
         <th className={css.title}>Amount</th>
         <th className={css.title}>Currency</th>
@@ -28,9 +28,9 @@ export const Transactions = ({ items }) => {
 Transactions.propTypes = {
   items: PropTypes.arrayOf(
       PropTypes.shape({
-          id: PropTypes.number,
+          id: PropTypes.string,
           type: PropTypes.string,
-          amount: PropTypes.number,
+          amount: PropTypes.string,
           currency: PropTypes.string,
       })
   ),
